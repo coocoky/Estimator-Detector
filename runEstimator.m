@@ -13,6 +13,7 @@ clear all; clc; close all
 addpath('Generated Samples');
 addpath('Sample Generating Functions');
 addpath('waveCommon');
+addpath('TestDataSets');
 
 global DensityVars CD;
 
