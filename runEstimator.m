@@ -32,9 +32,8 @@ sampleLength = length(DensityVars.Sample);
 sampBforWindow = DensityVars.DensityDomain(1) - 1;
 
 % Initialize the density change detector if enabled.
-if( DensityVars.ChangeDetectorFlag == 1)
-    changeDetectorInit();
-end % if( DensityVars.ChangeDetectorFlag == 1)
+changeDetectorInit();
+
 
 
 for i = 1 : sampleLength
@@ -71,7 +70,7 @@ for i = 1 : sampleLength
                     ylim([0 1.5]);
                 end
             else
-                ylim([0 0.75]);
+                ylim([0 2.5]);
             end
             box on;
             drawnow();
@@ -84,7 +83,7 @@ for i = 1 : sampleLength
     %               KIFER WINDOWS FOR CHANGE DETECTION
     % ---------------------------------------------------------------------
     
-    if( DensityVars.ChangeDetectorFlag == 1)
+    if( CD.ENABLE == 1)
         
         for h = 1:CD.NumOfPairs
             

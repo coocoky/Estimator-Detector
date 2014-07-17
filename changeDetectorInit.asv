@@ -10,7 +10,7 @@
 % 
 % Usage   : Use this function to initialize the density change detector.
 %           Parameters to Initialise:
-%           - CD.ENABLE      : enable or disable the change detector.
+%           - CD.ENABLE      : e
 %           - CD.NumOfPairs  : sets the number of pairs of k-windows to use
 %           - CD.WindowSizes : vector of sizes of each pair of k-windows
 %           - CD.Thresholds  : detection thresholds used for the window pairs
@@ -36,7 +36,7 @@ CD = struct();
 
 % ENABLE / DISABLE CHANGE DETECTOR
 % -------------------------------------------------------------------------
-CD.ENABLE = 1;  % 1- ENABLE 0- DISABLE
+CD.ENABLE = 1;
 
 % CHOOSE THE NUMBER OF WINDOW PAIRS
 % -------------------------------------------------------------------------

@@ -61,7 +61,6 @@ DensityVars.Discretization     = 0.1;
 DensityVars.DensityDomain      = [-3.5 3.5];
 DensityVars.ShowPlot           = 1; 
 DensityVars.PlotUpdateFreq     = 25;
-DensityVars.ChangeDetectorFlag = 1;
 DensityVars.WaveSupport        = waveSupport( DensityVars.Wavelet );
 
 load(['waveCommon/', DensityVars.Wavelet, 'Tables.mat'], 'supp', 'phi', 'psi');
